@@ -10,7 +10,8 @@ repositories {
 }
 
 dependencies {
-    implementation group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.2.21'
+    implementation platform('io.projectreactor:reactor-bom:2024.0.3')
+    implementation 'io.projectreactor:reactor-core'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
